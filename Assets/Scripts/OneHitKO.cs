@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OneHitKO : Enemy
 {
+    //INHERITANCE
     
     
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class OneHitKO : Enemy
 
     private void OnTriggerEnter(Collider other)
     {
+        // POLYMORPHISM
         DecreaseHealth(hitPoints);
         Destroy(other.gameObject);
     }

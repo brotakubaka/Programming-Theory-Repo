@@ -15,6 +15,7 @@ public class ShootBullets : MonoBehaviour
         
     }
 
+    // ABSTRACTION
     void SpawnBullet()
     {
         if (Input.GetKeyDown(KeyCode.Space))

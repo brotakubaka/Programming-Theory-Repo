@@ -14,7 +14,8 @@ public class MoveForward : MonoBehaviour
 
     private void Update()
     {
-        bulletRb.AddForce(transform.forward * forwardForce, ForceMode.Impulse);
+        // bulletRb.AddForce(transform.forward * forwardForce);
+        transform.Translate(Vector3.forward * forwardForce * Time.deltaTime);
         Destroy(gameObject, 3.0f);
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int hitPoints;
+    // ENCAPSULATION
+    public int hitPoints { get; set; }
     
 
     public void DecreaseHealth(int healthPoints)
