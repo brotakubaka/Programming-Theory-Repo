@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1620419958806649661}
   - component: {fileID: 4038128291714820344}
   - component: {fileID: -1540674038138626014}
+  - component: {fileID: -2907966934054093838}
   m_Layer: 0
   m_Name: 2Hit Enemy
   m_TagString: Untagged
@@ -133,3 +134,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2907966934054093838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231157368449428219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff61ef7b5013cd34f86de95035357edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 0
+  bulletCollider: {fileID: 4633023849387483141, guid: f204b594432aadf4eb4c43bd34458c7e, type: 3}

@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-    public GameObject player;
-    public float turnSpeed;
-
-    
-
-    private void Start()
+    public float movementSpeed;
+    public float horizontalInput;
+    void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     void Update()
     {
-        float y = Input.GetAxis("Mouse X") * turnSpeed;
-        player.transform.eulerAngles = new Vector3(0, player.transform.eulerAngles.y * y, 0);
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(-Vector3.left * horizontalInput * movementSpeed * Time.deltaTime);
     }
 
     
