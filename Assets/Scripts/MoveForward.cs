@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    Rigidbody bulletRb;
+    
     public float forwardForce;
 
-    private void Start()
-    {
-        bulletRb = gameObject.GetComponent<Rigidbody>();
-    }
+   
 
     private void Update()
     {
